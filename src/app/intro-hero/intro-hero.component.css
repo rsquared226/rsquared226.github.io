@@ -1,13 +1,15 @@
 .white-text {
   color: #ebebeb;
+  margin-bottom: 40px;
 }
 
 .subtitle-color {
   color: #ebebebb2;
+  margin-bottom: 10px;
 }
 
 .animated-background {
-  background: linear-gradient(17deg, #1e52aa, #2b6eb1);
+  background: linear-gradient(17deg, #1950af, #005a5a);
   background-size: 400% 400%;
 
   -webkit-animation: AnimationName 20s ease infinite;
