@@ -9,6 +9,7 @@
       content="rahulramkumar.dev, rahul ramkumar, rahul, ramkumar, portfolio, computer science, penn state, psu"
     />
 
+    <!-- Open Graph tags -->
     <meta property="og:title" content="Rahul Ramkumar" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://rahulramkumar.dev/" />
@@ -24,14 +25,24 @@
       content="Hi! I'm a computer science student that has experience in..."
     />
 
-    <base href="/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="canonical" href="https://rahulramkumar.dev/" />
     <script
       src="https://kit.fontawesome.com/c0f02b0834.js"
       crossorigin="anonymous"
     ></script>
+
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="canonical" href="https://rahulramkumar.dev/" />
+
+    <!-- IE warning -->
+    <script>
+      if (window.document.documentMode) {
+        alert(
+          "Website not compatible with Internet Explorer.\n Please switch to a different browser."
+        );
+      }
+    </script>
   </head>
   <body class="has-navbar-fixed-top">
     <app-root></app-root>
