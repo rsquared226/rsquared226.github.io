@@ -6,9 +6,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { IntroHeroComponent } from './intro-hero/intro-hero.component';
 import { FooterComponent } from './footer/footer.component';
 import { LeadershipComponent } from './leadership/leadership.component';
+import { InfoCardComponent } from './info-card/info-card.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, IntroHeroComponent, FooterComponent, LeadershipComponent],
+  declarations: [AppComponent, NavbarComponent, IntroHeroComponent, FooterComponent, LeadershipComponent, InfoCardComponent],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],
