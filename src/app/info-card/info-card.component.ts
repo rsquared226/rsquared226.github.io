@@ -12,6 +12,8 @@ export class InfoCardComponent implements OnInit {
   @Input() role: string;
   @Input() description: string;
   @Input() skills: string;
+  @Input() githubLink: string;
+  @Input() generalLink: string;
 
   constructor() {}
 

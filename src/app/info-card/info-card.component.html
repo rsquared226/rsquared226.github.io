@@ -12,7 +12,13 @@
       <p class="subtitle description">
         {{ description }}
       </p>
-      <p *ngIf="skills.length !== 0" class="skills">Skills: {{ skills }}</p>
+      <p *ngIf="skills != null" class="skills">Skills: {{ skills }}</p>
+      <div
+        *ngIf="githubLink != null || generalLink != null"
+        class="field is-grouped"
+      >
+        <p>test</p>
+      </div>
     </div>
   </div>
 </div>
