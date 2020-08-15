@@ -1,12 +1,15 @@
 <div class="card">
   <div class="card-image">
     <figure class="image is-2by1">
-      <img src="{{ imageUrl }}" alt="{{ title }} logo" />
+      <img [src]="imageUrl" alt="{{ title }} logo" />
     </figure>
   </div>
   <div class="card-content">
     <h1 class="title">
       {{ title }}
     </h1>
+    <p class="subtitle description">
+      {{ description }}
+    </p>
   </div>
 </div>
