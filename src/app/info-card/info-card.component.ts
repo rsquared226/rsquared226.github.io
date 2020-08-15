@@ -8,7 +8,10 @@ import { Component, OnInit, Input } from '@angular/core';
 export class InfoCardComponent implements OnInit {
   @Input() imageUrl: string;
   @Input() title: string;
+  // TODO: make use of role
+  @Input() role: string;
   @Input() description: string;
+  @Input() skills: string;
 
   constructor() {}
 
