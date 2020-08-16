@@ -1,5 +1,5 @@
 <div class="card">
-  <div class="card-image">
+  <div *ngIf="imageUrl != null" class="card-image">
     <figure class="image is-2by1">
       <img [src]="imageUrl" alt="{{ title }} logo" />
     </figure>
@@ -9,7 +9,7 @@
       {{ title }}
     </h1>
     <div class="content">
-      <p class="subtitle description">
+      <p *ngIf="description != null" class="subtitle description">
         {{ description }}
       </p>
       <p *ngIf="skills != null" class="skills">Skills: {{ skills }}</p>
