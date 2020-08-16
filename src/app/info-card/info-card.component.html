@@ -13,22 +13,19 @@
         {{ description }}
       </p>
       <p *ngIf="skills != null" class="skills">Skills: {{ skills }}</p>
-      <div
-        *ngIf="githubLink != null || generalLink != null"
-        class="field is-grouped"
-      >
-        <!-- TODO: Make this a component for gh button -->
-        <a
-          *ngIf="generalLink != null && generalLinkName != null"
-          class="button is-link"
-          [href]="generalLink"
-          target="_blank"
-        >
-          <span *ngIf="generalFaIcon != null" class="icon">
-            <i [class]="generalFaIcon"></i>
-          </span>
-          <span>{{ generalLinkName }}</span>
-        </a>
+      <div *ngIf="githubLink != null || generalLink != null" class="buttons">
+        <app-link-button
+          [link]="generalLink"
+          [linkName]="generalLinkName"
+          [faIcon]="generalFaIcon"
+          bulmaColor="is-link"
+        ></app-link-button>
+        <app-link-button
+          [link]="githubLink"
+          linkName="Repo"
+          faIcon="fab fa-github"
+          bulmaColor="is-dark"
+        ></app-link-button>
       </div>
     </div>
   </div>

@@ -1,1 +1,11 @@
-<p>link-button works!</p>
+<a
+  *ngIf="link != null && linkName != null"
+  class="button {{ bulmaColor }} button-margin"
+  [href]="link"
+  target="_blank"
+>
+  <span *ngIf="faIcon != null" class="icon">
+    <i [class]="faIcon"></i>
+  </span>
+  <span>{{ linkName }}</span>
+</a>
