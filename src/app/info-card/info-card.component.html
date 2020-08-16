@@ -17,7 +17,18 @@
         *ngIf="githubLink != null || generalLink != null"
         class="field is-grouped"
       >
-        <p>test</p>
+        <!-- TODO: Make this a component for gh button -->
+        <a
+          *ngIf="generalLink != null && generalLinkName != null"
+          class="button is-link"
+          [href]="generalLink"
+          target="_blank"
+        >
+          <span *ngIf="generalFaIcon != null" class="icon">
+            <i [class]="generalFaIcon"></i>
+          </span>
+          <span>{{ generalLinkName }}</span>
+        </a>
       </div>
     </div>
   </div>
