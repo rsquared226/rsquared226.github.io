@@ -3,6 +3,7 @@ import { InfoCardDetails } from '../info-card/info-card.component';
 
 @Component({
   selector: 'app-leadership',
+  // TODO: Make inline
   templateUrl: './leadership.component.html',
   styleUrls: ['./leadership.component.css'],
 })
