@@ -8,7 +8,7 @@ import { InfoCardDetails } from '../info-card/info-card.component';
 })
 export class PortfolioSectionComponent implements OnInit {
   @Input() sectionName: string;
-  // TODO: Input font
+  @Input() fontFamily: string;
   @Input() bulmaColor: string;
   @Input() infoCardsDetails: InfoCardDetails[];
 
