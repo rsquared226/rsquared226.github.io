@@ -3,7 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export interface InfoCardDetails {
   readonly imageUrl?: string;
   readonly title: string;
-  // TODO: implement role
+  // TODO: add years/dates
   readonly role?: string;
   readonly description?: string;
   readonly skills?: string;

@@ -11,6 +11,9 @@
     <h1 class="title">
       {{ infoCardDetails.title }}
     </h1>
+    <p *ngIf="infoCardDetails.role != null" class="subtitle subtitle-text">
+      {{ infoCardDetails.role }}
+    </p>
     <div class="content">
       <p
         *ngIf="infoCardDetails.description != null"

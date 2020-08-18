@@ -2,6 +2,11 @@ img {
   object-fit: cover;
 }
 
+.subtitle-text {
+  font-size: large;
+  font-weight: 600;
+}
+
 .description {
   font-size: medium;
 }

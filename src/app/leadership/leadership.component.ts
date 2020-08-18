@@ -11,6 +11,7 @@ export class LeadershipComponent implements OnInit {
     {
       imageUrl: 'https://hackpsu.org/assets/images/logo-daytime.svg',
       title: 'HackPSU',
+      role: 'Tech Director',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan ligula ut mi vehicula, in pulvinar orci.',
       skills: 'C++, Java',
