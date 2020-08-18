@@ -1,1 +1,50 @@
-<p>portfolio-section works!</p>
+<section class="hero {{ bulmaColor }} is-bold is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-one-quarter-widescreen is-narrow-tablet">
+          <h1 class="title has-text-white has-text-centered-mobile">
+            {{ sectionName }}
+          </h1>
+        </div>
+
+        <div class="column">
+          <div class="columns is-desktop">
+            <div class="column">
+              <div *ngFor="let cardDetails of firstColData()">
+                <app-info-card
+                  [imageUrl]="cardDetails.imageUrl"
+                  [title]="cardDetails.title"
+                  [role]="cardDetails.role"
+                  [description]="cardDetails.description"
+                  [skills]="cardDetails.skills"
+                  [githubLink]="cardDetails.githubLink"
+                  [generalLink]="cardDetails.generalLink"
+                  [generalLinkName]="cardDetails.generalLinkName"
+                  [generalFaIcon]="cardDetails.generalFaIcon"
+                ></app-info-card>
+                <br />
+              </div>
+            </div>
+            <div class="column">
+              <div *ngFor="let cardDetails of secondColData()">
+                <app-info-card
+                  [imageUrl]="cardDetails.imageUrl"
+                  [title]="cardDetails.title"
+                  [role]="cardDetails.role"
+                  [description]="cardDetails.description"
+                  [skills]="cardDetails.skills"
+                  [githubLink]="cardDetails.githubLink"
+                  [generalLink]="cardDetails.generalLink"
+                  [generalLinkName]="cardDetails.generalLinkName"
+                  [generalFaIcon]="cardDetails.generalFaIcon"
+                ></app-info-card>
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
