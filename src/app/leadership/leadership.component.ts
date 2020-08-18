@@ -3,12 +3,25 @@ import { InfoCardDetails } from '../info-card/info-card.component';
 
 @Component({
   selector: 'app-leadership',
-  // TODO: Make inline
-  templateUrl: './leadership.component.html',
-  styleUrls: ['./leadership.component.css'],
+  template: `
+    <app-portfolio-section
+      sectionName="LEADERSHIP"
+      fontFamily="sans-serif"
+      bulmaColor="is-warning"
+      [infoCardsDetails]="infoCardDetails"
+    ></app-portfolio-section>
+  `,
+  styles: [
+    `
+      h1 {
+        font-size: 40px;
+        font-family: sans-serif;
+      }
+    `,
+  ],
 })
 export class LeadershipComponent implements OnInit {
-  infoCardDetails: InfoCardDetails[] = [
+  readonly infoCardDetails: InfoCardDetails[] = [
     {
       imageUrl: 'https://hackpsu.org/assets/images/logo-daytime.svg',
       title: 'HackPSU',
