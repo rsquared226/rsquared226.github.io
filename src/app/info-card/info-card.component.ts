@@ -1,21 +1,25 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+export interface InfoCardDetails {
+  readonly imageUrl?: string;
+  readonly title: string;
+  // TODO: implement role
+  readonly role?: string;
+  readonly description?: string;
+  readonly skills?: string;
+  readonly githubLink?: string;
+  readonly generalLink?: string;
+  readonly generalLinkName?: string;
+  readonly generalFaIcon?: string;
+}
+
 @Component({
   selector: 'app-info-card',
   templateUrl: './info-card.component.html',
   styleUrls: ['./info-card.component.css'],
 })
 export class InfoCardComponent implements OnInit {
-  @Input() imageUrl: string;
-  @Input() title: string;
-  // TODO: make use of role
-  @Input() role: string;
-  @Input() description: string;
-  @Input() skills: string;
-  @Input() githubLink: string;
-  @Input() generalLink: string;
-  @Input() generalLinkName: string;
-  @Input() generalFaIcon: string;
+  @Input() infoCardDetails: InfoCardDetails;
 
   constructor() {}
 

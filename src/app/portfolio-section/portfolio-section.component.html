@@ -1,4 +1,4 @@
-<section class="hero {{ bulmaColor }} is-bold is-medium">
+<section class="hero is-bold is-medium" [class]="bulmaColor">
   <div class="hero-body">
     <div class="container">
       <div class="columns">
@@ -12,33 +12,13 @@
           <div class="columns is-desktop">
             <div class="column">
               <div *ngFor="let cardDetails of firstColData()">
-                <app-info-card
-                  [imageUrl]="cardDetails.imageUrl"
-                  [title]="cardDetails.title"
-                  [role]="cardDetails.role"
-                  [description]="cardDetails.description"
-                  [skills]="cardDetails.skills"
-                  [githubLink]="cardDetails.githubLink"
-                  [generalLink]="cardDetails.generalLink"
-                  [generalLinkName]="cardDetails.generalLinkName"
-                  [generalFaIcon]="cardDetails.generalFaIcon"
-                ></app-info-card>
+                <app-info-card [infoCardDetails]="cardDetails"></app-info-card>
                 <br />
               </div>
             </div>
             <div class="column">
               <div *ngFor="let cardDetails of secondColData()">
-                <app-info-card
-                  [imageUrl]="cardDetails.imageUrl"
-                  [title]="cardDetails.title"
-                  [role]="cardDetails.role"
-                  [description]="cardDetails.description"
-                  [skills]="cardDetails.skills"
-                  [githubLink]="cardDetails.githubLink"
-                  [generalLink]="cardDetails.generalLink"
-                  [generalLinkName]="cardDetails.generalLinkName"
-                  [generalFaIcon]="cardDetails.generalFaIcon"
-                ></app-info-card>
+                <app-info-card [infoCardDetails]="cardDetails"></app-info-card>
                 <br />
               </div>
             </div>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { InfoCardDetails } from '../portfolio-section/portfolio-section.component';
+import { InfoCardDetails } from '../info-card/info-card.component';
 
 @Component({
   selector: 'app-leadership',

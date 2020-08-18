@@ -1,16 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { InfoCardDetails } from '../info-card/info-card.component';
 
-export interface InfoCardDetails {
-  readonly imageUrl?: string;
-  readonly title: string;
-  readonly role?: string;
-  readonly description?: string;
-  readonly skills?: string;
-  readonly githubLink?: string;
-  readonly generalLink?: string;
-  readonly generalLinkName?: string;
-  readonly generalFaIcon?: string;
-}
 @Component({
   selector: 'app-portfolio-section',
   templateUrl: './portfolio-section.component.html',

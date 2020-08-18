@@ -1,27 +1,41 @@
 <div class="card">
-  <div *ngIf="imageUrl != null" class="card-image">
+  <div *ngIf="infoCardDetails.imageUrl != null" class="card-image">
     <figure class="image is-2by1">
-      <img [src]="imageUrl" alt="{{ title }} logo" />
+      <img
+        [src]="infoCardDetails.imageUrl"
+        alt="{{ infoCardDetails.title }} logo"
+      />
     </figure>
   </div>
   <div class="card-content">
     <h1 class="title">
-      {{ title }}
+      {{ infoCardDetails.title }}
     </h1>
     <div class="content">
-      <p *ngIf="description != null" class="subtitle description">
-        {{ description }}
+      <p
+        *ngIf="infoCardDetails.description != null"
+        class="subtitle description"
+      >
+        {{ infoCardDetails.description }}
       </p>
-      <p *ngIf="skills != null" class="skills">Skills: {{ skills }}</p>
-      <div *ngIf="githubLink != null || generalLink != null" class="buttons">
+      <p *ngIf="infoCardDetails.skills != null" class="skills">
+        Skills: {{ infoCardDetails.skills }}
+      </p>
+      <div
+        *ngIf="
+          infoCardDetails.githubLink != null ||
+          infoCardDetails.generalLink != null
+        "
+        class="buttons"
+      >
         <app-link-button
-          [link]="generalLink"
-          [linkName]="generalLinkName"
-          [faIcon]="generalFaIcon"
+          [link]="infoCardDetails.generalLink"
+          [linkName]="infoCardDetails.generalLinkName"
+          [faIcon]="infoCardDetails.generalFaIcon"
           bulmaColor="is-link"
         ></app-link-button>
         <app-link-button
-          [link]="githubLink"
+          [link]="infoCardDetails.githubLink"
           linkName="Repo"
           faIcon="fab fa-github"
           bulmaColor="is-dark"
