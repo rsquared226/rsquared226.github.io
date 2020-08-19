@@ -31,11 +31,16 @@
     <div class="content">
       <p
         *ngIf="infoCardDetails.description != null"
-        class="subtitle description"
+        class="subtitle description mb-0"
+        [ngClass]="{ truncate: isDescriptionTruncated }"
       >
         {{ infoCardDetails.description }}
       </p>
-      <p *ngIf="infoCardDetails.skills != null" class="skills">
+      <a class="" (click)="toggleDescriptionTruncation()">
+        {{ isDescriptionTruncated ? "Show more…" : "Show less…" }}
+      </a>
+
+      <p *ngIf="infoCardDetails.skills != null" class="skills mt-2">
         Skills: {{ infoCardDetails.skills }}
       </p>
       <div

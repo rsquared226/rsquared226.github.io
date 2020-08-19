@@ -21,7 +21,13 @@ export interface InfoCardDetails {
 export class InfoCardComponent implements OnInit {
   @Input() infoCardDetails: InfoCardDetails;
 
+  isDescriptionTruncated: boolean = true;
+
   constructor() {}
 
   ngOnInit(): void {}
+
+  toggleDescriptionTruncation(): void {
+    this.isDescriptionTruncated = !this.isDescriptionTruncated;
+  }
 }
