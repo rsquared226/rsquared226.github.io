@@ -11,14 +11,7 @@ import { InfoCardDetails } from '../info-card/info-card.component';
       [infoCardsDetails]="infoCardDetails"
     ></app-portfolio-section>
   `,
-  styles: [
-    `
-      h1 {
-        font-size: 40px;
-        font-family: sans-serif;
-      }
-    `,
-  ],
+  styles: [],
 })
 export class LeadershipComponent implements OnInit {
   readonly infoCardDetails: InfoCardDetails[] = [
@@ -42,6 +35,7 @@ export class LeadershipComponent implements OnInit {
       generalLink: 'https://hackpsu.org/',
       generalLinkName: 'Website',
       generalFaIcon: 'fas fa-desktop',
+      githubLink: '#',
     },
     {
       imageUrl: 'https://hackpsu.org/assets/images/logo-daytime.svg',

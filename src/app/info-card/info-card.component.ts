@@ -12,7 +12,7 @@ export interface InfoCardDetails {
   readonly generalLinkName?: string;
   readonly generalFaIcon?: string;
 }
-// TODO: Extend bulma css classes instead of making new ones
+
 @Component({
   selector: 'app-info-card',
   templateUrl: './info-card.component.html',
