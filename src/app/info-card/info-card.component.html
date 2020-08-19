@@ -11,9 +11,23 @@
     <h1 class="title">
       {{ infoCardDetails.title }}
     </h1>
-    <p *ngIf="infoCardDetails.role != null" class="subtitle subtitle-text">
-      {{ infoCardDetails.role }}
+
+    <p
+      *ngIf="infoCardDetails.role != null || infoCardDetails.dates != null"
+      class="subtitle subtitle-text"
+    >
+      <span *ngIf="infoCardDetails.role != null">
+        {{ infoCardDetails.role }}
+      </span>
+      <!-- Without this, if there were no role and only a dates property, then the right align would cause the dates
+        element to be on the same line as the content below. -->
+      <span *ngIf="infoCardDetails.role == null">&nbsp;</span>
+
+      <span *ngIf="infoCardDetails.dates != null" class="is-pulled-right">
+        {{ infoCardDetails.dates }}
+      </span>
     </p>
+
     <div class="content">
       <p
         *ngIf="infoCardDetails.description != null"
