@@ -1,0 +1,68 @@
+<div class="card">
+  <div *ngIf="infoCardDetails.imageUrl != null" class="card-image">
+    <figure class="image is-2by1">
+      <img
+        [src]="infoCardDetails.imageUrl"
+        alt="{{ infoCardDetails.title }} logo"
+      />
+    </figure>
+  </div>
+  <div class="card-content">
+    <h1 class="title">
+      {{ infoCardDetails.title }}
+    </h1>
+
+    <p
+      *ngIf="infoCardDetails.role != null || infoCardDetails.dates != null"
+      class="subtitle role-date"
+    >
+      <span *ngIf="infoCardDetails.role != null">
+        {{ infoCardDetails.role }}
+      </span>
+      <!-- Without this, if there were no role and only a dates property, then the right align would cause the dates
+        element to be on the same line as the content below. -->
+      <span *ngIf="infoCardDetails.role == null">&nbsp;</span>
+
+      <span *ngIf="infoCardDetails.dates != null" class="is-pulled-right">
+        {{ infoCardDetails.dates }}
+      </span>
+    </p>
+
+    <div class="content">
+      <p
+        *ngIf="infoCardDetails.description != null"
+        class="subtitle description mb-0"
+        [ngClass]="{ truncate: isDescriptionTruncated }"
+      >
+        {{ infoCardDetails.description }}
+      </p>
+      <a class="" (click)="toggleDescriptionTruncation()">
+        {{ isDescriptionTruncated ? "Show more…" : "Show less…" }}
+      </a>
+
+      <p *ngIf="infoCardDetails.skills != null" class="skills mt-2">
+        Skills: {{ infoCardDetails.skills }}
+      </p>
+      <div
+        *ngIf="
+          infoCardDetails.githubLink != null ||
+          infoCardDetails.generalLink != null
+        "
+        class="buttons"
+      >
+        <app-link-button
+          [link]="infoCardDetails.generalLink"
+          [linkName]="infoCardDetails.generalLinkName"
+          [faIcon]="infoCardDetails.generalFaIcon"
+          bulmaColor="is-link"
+        ></app-link-button>
+        <app-link-button
+          [link]="infoCardDetails.githubLink"
+          linkName="Repo"
+          faIcon="fab fa-github"
+          bulmaColor="is-dark"
+        ></app-link-button>
+      </div>
+    </div>
+  </div>
+</div>

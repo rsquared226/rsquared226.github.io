@@ -1,0 +1,23 @@
+img {
+  object-fit: cover;
+}
+
+.role-date {
+  font-size: large;
+  font-weight: 600;
+}
+
+.description {
+  font-size: medium;
+}
+
+.truncate {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.skills {
+  font-weight: bold;
+}
