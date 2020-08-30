@@ -29,18 +29,25 @@
     </p>
 
     <div class="content">
-      <p
-        *ngIf="infoCardDetails.description != null"
+      <ul
+        *ngIf="
+          infoCardDetails.descriptionPoints != null ||
+          infoCardDetails.descriptionPoints.length != 0
+        "
         class="subtitle description mb-0"
-        [ngClass]="{ truncate: isDescriptionTruncated }"
       >
-        {{ infoCardDetails.description }}
-      </p>
-      <a class="" (click)="toggleDescriptionTruncation()">
+        <li *ngFor="let point of truncatedList()">
+          {{ point }}
+        </li>
+      </ul>
+      <a
+        *ngIf="infoCardDetails.descriptionPoints.length > 4"
+        (click)="toggleDescriptionTruncation()"
+      >
         {{ isDescriptionTruncated ? "Show more…" : "Show less…" }}
       </a>
 
-      <p *ngIf="infoCardDetails.skills != null" class="skills mt-2">
+      <p *ngIf="infoCardDetails.skills != null" class="skills mt-2 mb-0">
         Skills: {{ infoCardDetails.skills }}
       </p>
       <div
@@ -48,7 +55,7 @@
           infoCardDetails.githubLink != null ||
           infoCardDetails.generalLink != null
         "
-        class="buttons"
+        class="buttons mt-3"
       >
         <app-link-button
           [link]="infoCardDetails.generalLink"
