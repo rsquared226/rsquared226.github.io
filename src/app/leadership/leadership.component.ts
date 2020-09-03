@@ -43,6 +43,20 @@ export class LeadershipComponent implements OnInit {
       generalLinkName: 'Social',
       generalFaIcon: 'fab fa-instagram',
     },
+    {
+      title: 'FIRST Tech Challenge',
+      role: 'Software Lead',
+      dates: 'June 2017 - May 2019',
+      descriptionPoints: [
+        'Led team of 6 developers to program the robot to compete in competitions',
+        'Taught new members the basics of Java and Android Studio',
+        'Assigned tasks to members using Basecamp and used GitHub to manage the code',
+      ],
+      generalLink: 'http://www.pacar-robotics.org/',
+      generalLinkName: 'Website',
+      generalFaIcon: 'fas fa-desktop',
+      githubLink: 'https://github.com/pacar-robotics',
+    },
   ];
 
   constructor() {}
