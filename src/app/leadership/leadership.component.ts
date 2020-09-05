@@ -57,6 +57,15 @@ export class LeadershipComponent implements OnInit {
       generalFaIcon: 'fas fa-desktop',
       githubLink: 'https://github.com/pacar-robotics',
     },
+    {
+      title: 'Technology Student Association',
+      role: 'Chapter President, Secretary',
+      dates: 'August 2017 - May 2019',
+      descriptionPoints: [
+        'Led the school chapter to ensure all 96 members knew how to register and compete effectively in their events',
+        'Raised over $500 for the club by marketing Little Debbie’s treats to the school',
+      ],
+    },
   ];
 
   constructor() {}
