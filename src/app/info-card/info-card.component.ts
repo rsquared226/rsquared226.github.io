@@ -1,11 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { enableDebugTools } from '@angular/platform-browser';
 
 export interface InfoCardDetails {
   readonly imageUrl?: string;
   readonly title: string;
   readonly dates?: string;
   readonly role?: string;
-  readonly description?: string;
+  readonly descriptionPoints?: string[];
   readonly skills?: string;
   readonly githubLink?: string;
   readonly generalLink?: string;
@@ -26,6 +27,12 @@ export class InfoCardComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  truncatedList(): string[] {
+    return this.isDescriptionTruncated
+      ? this.infoCardDetails.descriptionPoints.slice(0, 4)
+      : this.infoCardDetails.descriptionPoints;
+  }
 
   toggleDescriptionTruncation(): void {
     this.isDescriptionTruncated = !this.isDescriptionTruncated;
