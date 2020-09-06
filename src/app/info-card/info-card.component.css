@@ -11,6 +11,7 @@ p {
 }
 li {
   color: #000000f2 !important;
+  padding-right: 10px;
 }
 
 .role-date {
