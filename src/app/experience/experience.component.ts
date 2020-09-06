@@ -21,6 +21,7 @@ export class ExperienceComponent implements OnInit {
       dates: 'May 2020 - Current',
       descriptionPoints: [
         'Designed, coded, and deployed a beautiful and intuitive budgeting application using Flutter',
+        'Summer personal project with 250+ hours invested',
         'Enable the user to track transactions and view insights on how they spend/earn their money',
         '200+ installs',
       ],
@@ -57,6 +58,21 @@ export class ExperienceComponent implements OnInit {
       generalLinkName: 'Website',
       generalFaIcon: 'fas fa-desktop',
       githubLink: 'https://github.com/rsquared226/rsquared226.github.io',
+    },
+    {
+      imageUrl: '/assets/images/ftcexperience.jpg',
+      title: 'FIRST Tech Challenge',
+      dates: 'May 2014 - May 2019',
+      descriptionPoints: [
+        'Worked with a team of 15 people to build and program a robot to compete in competitions',
+        'Designed and implemented software for the robot using Java in Android Studio and utilized TensorFlow to autonomously identify balls and blocks on the playing field',
+        'Assigned tasks to members using Basecamp and used GitHub to manage the code',
+      ],
+      skills: 'Java, Android Studio, GitHub',
+      generalLink: 'http://www.pacar-robotics.org/',
+      generalLinkName: 'Website',
+      generalFaIcon: 'fas fa-desktop',
+      githubLink: 'https://github.com/pacar-robotics',
     },
   ];
 

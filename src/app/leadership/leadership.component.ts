@@ -44,6 +44,7 @@ export class LeadershipComponent implements OnInit {
       generalFaIcon: 'fab fa-instagram',
     },
     {
+      imageUrl: '/assets/images/ftcleader.png',
       title: 'FIRST Tech Challenge',
       role: 'Software Lead',
       dates: 'June 2017 - May 2019',
@@ -51,6 +52,7 @@ export class LeadershipComponent implements OnInit {
         'Led team of 6 developers to program the robot to compete in competitions',
         'Taught new members the basics of Java and Android Studio',
         'Assigned tasks to members using Basecamp and used GitHub to manage the code',
+        'Organized and presented software lessons in our annual robotics camps',
       ],
       generalLink: 'http://www.pacar-robotics.org/',
       generalLinkName: 'Website',
@@ -58,6 +60,7 @@ export class LeadershipComponent implements OnInit {
       githubLink: 'https://github.com/pacar-robotics',
     },
     {
+      imageUrl: '/assets/images/tsa.png',
       title: 'Technology Student Association',
       role: 'Chapter President, Secretary',
       dates: 'August 2017 - May 2019',
