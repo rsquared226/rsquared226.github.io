@@ -14,7 +14,7 @@
 
     <p
       *ngIf="infoCardDetails.role != null || infoCardDetails.dates != null"
-      class="subtitle role-date"
+      class="subtitle role-date mb-0"
     >
       <span *ngIf="infoCardDetails.role != null">
         {{ infoCardDetails.role }}
@@ -47,15 +47,21 @@
         {{ isDescriptionTruncated ? "Show more…" : "Show less…" }}
       </a>
 
-      <p *ngIf="infoCardDetails.skills != null" class="skills mt-2 mb-0">
-        Skills: {{ infoCardDetails.skills }}
-      </p>
+      <div
+        *ngIf="infoCardDetails.skills != null"
+        class="skills columns is-gapless mt-4 mb-0"
+      >
+        <p class="column is-narrow mr-2 ml-1">Skills:</p>
+        <p class="column">{{ infoCardDetails.skills }}</p>
+        <p></p>
+      </div>
+
       <div
         *ngIf="
           infoCardDetails.githubLink != null ||
           infoCardDetails.generalLink != null
         "
-        class="buttons mt-3"
+        class="buttons mt-4"
       >
         <app-link-button
           [link]="infoCardDetails.generalLink"
