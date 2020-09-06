@@ -11,9 +11,11 @@ import { LinkButtonComponent } from './info-card/link-button/link-button.compone
 import { PortfolioSectionComponent } from './portfolio-section/portfolio-section.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
+import { SkillsCardComponent } from './skills-card/skills-card.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, IntroHeroComponent, FooterComponent, LeadershipComponent, InfoCardComponent, LinkButtonComponent, PortfolioSectionComponent, ExperienceComponent, EducationComponent],
+  declarations: [AppComponent, NavbarComponent, IntroHeroComponent, FooterComponent, LeadershipComponent, InfoCardComponent, LinkButtonComponent, PortfolioSectionComponent, ExperienceComponent, EducationComponent, SkillsCardComponent, SkillsComponent],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],
