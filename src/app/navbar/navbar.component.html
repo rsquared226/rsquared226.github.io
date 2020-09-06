@@ -1,8 +1,4 @@
-<nav
-  class="navbar is-fixed-top"
-  role="nagivigation"
-  aria-label="main navigation"
->
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="#">
       <h1>Rahul Ramkumar</h1>
@@ -24,9 +20,8 @@
   </div>
   <div class="navbar-menu" [ngClass]="{ 'is-active': isNavbarBurgerOpen }">
     <div class="navbar-start">
-      <a class="navbar-item">
-        Home
-      </a>
+      <a class="navbar-item" href="#leadership">Leadership</a>
+      <a class="navbar-item" href="#experience">Experience</a>
     </div>
     <div class="navbar-end">
       <div class="navbar-item">

@@ -1,0 +1,11 @@
+<a
+  *ngIf="link != null && linkName != null"
+  class="button {{ bulmaColor }}"
+  [href]="link"
+  target="_blank"
+>
+  <span *ngIf="faIcon != null" class="icon">
+    <i [class]="faIcon"></i>
+  </span>
+  <span>{{ linkName }}</span>
+</a>

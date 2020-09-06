@@ -1,0 +1,28 @@
+img {
+  object-fit: cover;
+}
+
+h1 {
+  color: black !important;
+}
+
+p {
+  color: #000000b3 !important;
+}
+li {
+  color: #000000f2 !important;
+  padding-right: 10px;
+}
+
+.role-date {
+  font-size: large;
+  font-weight: 600;
+}
+
+.description {
+  font-size: medium;
+}
+
+.skills {
+  font-weight: bold;
+}

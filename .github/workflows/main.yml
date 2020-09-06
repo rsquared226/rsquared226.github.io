@@ -23,4 +23,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         npm install
-        npm run ng -- deploy --branch=gh-pages-build --name="rsquared226" --email="rahulram226@gmail.com" --no-silent
+        npm run ng -- deploy --cname=rahulramkumar.dev --branch=gh-pages-build --name="rsquared226" --email="rahulram226@gmail.com" --no-silent
