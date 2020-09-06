@@ -32,7 +32,7 @@ export class LeadershipComponent implements OnInit {
     {
       imageUrl: '/assets/images/unicef.jpg',
       title: 'UNICEF',
-      role: 'Treasurer, Fundraising Chair',
+      role: 'Treasurer',
       dates: 'January 2020 - Current',
       descriptionPoints: [
         'Responsible for the club budget and sent proceeds from fundraisers to UNICEF',
@@ -62,7 +62,7 @@ export class LeadershipComponent implements OnInit {
     {
       imageUrl: '/assets/images/tsa.png',
       title: 'Technology Student Association',
-      role: 'Chapter President, Secretary',
+      role: 'President',
       dates: 'August 2017 - May 2019',
       descriptionPoints: [
         'Led the school chapter to ensure all 96 members knew how to register and compete effectively in their events',
