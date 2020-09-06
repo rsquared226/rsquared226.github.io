@@ -68,7 +68,7 @@ export class ExperienceComponent implements OnInit {
         'Designed and implemented software for the robot using Java in Android Studio and utilized TensorFlow to autonomously identify balls and blocks on the playing field',
         'Assigned tasks to members using Basecamp and used GitHub to manage the code',
       ],
-      skills: 'Java, Android Studio, GitHub',
+      skills: 'Robotics, Java, Android Studio, GitHub',
       generalLink: 'http://www.pacar-robotics.org/',
       generalLinkName: 'Website',
       generalFaIcon: 'fas fa-desktop',
