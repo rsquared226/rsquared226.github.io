@@ -1,20 +1,62 @@
 import { Component, OnInit } from '@angular/core';
+import {
+  SkillCardDetails,
+  SkillLevel,
+} from '../skills-card/skills-card.component';
 
 @Component({
   selector: 'app-skills',
   template: `
-    <p>
-      skills works!
-    </p>
+    <app-portfolio-section
+      sectionName="Skills"
+      fontFamily=""
+      bulmaColor="is-dark"
+      [skillCardsDetails]="skillCardDetails"
+    ></app-portfolio-section>
   `,
-  styles: [
-  ]
+  styles: [],
 })
 export class SkillsComponent implements OnInit {
+  readonly skillCardDetails: SkillCardDetails[] = [
+    {
+      title: 'Java',
+      skillLevel: SkillLevel.Proficient,
+    },
+    {
+      title: 'Flutter',
+      skillLevel: SkillLevel.Proficient,
+    },
+    {
+      title: 'Angular',
+      skillLevel: SkillLevel.Familiar,
+    },
+    {
+      title: 'Java',
+      skillLevel: SkillLevel.Proficient,
+    },
+    {
+      title: 'Flutter',
+      skillLevel: SkillLevel.Proficient,
+    },
+    {
+      title: 'Angular',
+      skillLevel: SkillLevel.Familiar,
+    },
+    {
+      title: 'Java',
+      skillLevel: SkillLevel.Proficient,
+    },
+    {
+      title: 'Flutter',
+      skillLevel: SkillLevel.Proficient,
+    },
+    {
+      title: 'Angular',
+      skillLevel: SkillLevel.Familiar,
+    },
+  ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

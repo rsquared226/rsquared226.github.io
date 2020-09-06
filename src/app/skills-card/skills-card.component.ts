@@ -1,9 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-enum SkillLevel {
-  Learning,
-  Familiar,
-  Proficient,
+export enum SkillLevel {
+  Learning = 'Learning',
+  Familiar = 'Familiar',
+  Proficient = 'Proficient',
 }
 
 export interface SkillCardDetails {
@@ -17,7 +17,9 @@ export interface SkillCardDetails {
   styleUrls: ['./skills-card.component.css'],
 })
 export class SkillsCardComponent implements OnInit {
-  @Input() infoCardDetails: SkillCardDetails;
+  @Input() skillCardDetails: SkillCardDetails;
+
+  // TODO: Add different colors for skill levels.
 
   constructor() {}
 
