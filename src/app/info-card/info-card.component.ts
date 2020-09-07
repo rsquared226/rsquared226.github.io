@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { enableDebugTools } from '@angular/platform-browser';
 
 export interface InfoCardDetails {
   readonly imageUrl?: string;
