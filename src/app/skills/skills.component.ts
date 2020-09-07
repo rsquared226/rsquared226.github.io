@@ -9,7 +9,7 @@ import {
   template: `
     <app-portfolio-section
       sectionName="Skills"
-      fontFamily=""
+      fontFamily="'Trebuchet MS', Helvetica, sans-serif"
       bulmaColor="is-dark"
       [skillCardsDetails]="skillCardDetails"
     ></app-portfolio-section>
@@ -27,31 +27,39 @@ export class SkillsComponent implements OnInit {
       skillLevel: SkillLevel.Proficient,
     },
     {
-      title: 'Angular',
+      title: 'Git/GitHub',
+      skillLevel: SkillLevel.Proficient,
+    },
+    {
+      title: 'Robotics',
+      skillLevel: SkillLevel.Proficient,
+    },
+    {
+      title: 'React Native',
       skillLevel: SkillLevel.Familiar,
     },
     {
-      title: 'Java',
-      skillLevel: SkillLevel.Proficient,
-    },
-    {
-      title: 'Flutter',
-      skillLevel: SkillLevel.Proficient,
-    },
-    {
-      title: 'Angular',
+      title: 'Javascript',
       skillLevel: SkillLevel.Familiar,
     },
     {
-      title: 'Java',
-      skillLevel: SkillLevel.Proficient,
+      title: 'Python',
+      skillLevel: SkillLevel.Familiar,
     },
     {
-      title: 'Flutter',
-      skillLevel: SkillLevel.Proficient,
+      title: 'Android Studio',
+      skillLevel: SkillLevel.Familiar,
     },
     {
-      title: 'Angular',
+      title: 'C/C++',
+      skillLevel: SkillLevel.Familiar,
+    },
+    {
+      title: 'HTML/CSS',
+      skillLevel: SkillLevel.Familiar,
+    },
+    {
+      title: 'SQLite',
       skillLevel: SkillLevel.Familiar,
     },
     {
