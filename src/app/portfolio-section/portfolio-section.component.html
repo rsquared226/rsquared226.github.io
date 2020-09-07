@@ -39,10 +39,10 @@
           *ngIf="skillCardsDetails != null && skillCardsDetails.length > 0"
           class="column"
         >
-          <div class="columns is-multiline">
+          <div class="columns is-multiline is-mobile">
             <div
               *ngFor="let cardDetails of skillCardsDetails"
-              class="column is-one-quarter"
+              class="column is-one-quarter-fullhd is-one-quarter-widescreen is-one-quarter-desktop is-one-third-tablet is-half-mobile"
             >
               <app-skills-card
                 [skillCardDetails]="cardDetails"

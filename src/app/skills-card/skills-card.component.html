@@ -1,6 +1,13 @@
 <div class="card">
   <div class="card-content">
     <h1 class="title mb-2">{{ skillCardDetails.title }}</h1>
-    <p [ngStyle]="{ color: 'grey' }">{{ skillCardDetails.skillLevel }}</p>
+    <p
+      style="color: white"
+      [ngStyle]="{
+        'background-color': getSkillLevelColor(skillCardDetails.skillLevel)
+      }"
+    >
+      {{ skillCardDetails.skillLevel }}
+    </p>
   </div>
 </div>

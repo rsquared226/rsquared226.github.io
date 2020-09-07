@@ -24,4 +24,15 @@ export class SkillsCardComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  getSkillLevelColor(level: SkillLevel): string {
+    switch (level) {
+      case 'Proficient':
+        return '#3273dc';
+      case 'Familiar':
+        return '#19A2C7';
+      case 'Learning':
+        return '#00d1b2';
+    }
+  }
 }
