@@ -12,21 +12,27 @@
       {{ infoCardDetails.title }}
     </h1>
 
-    <p
+    <div
       *ngIf="infoCardDetails.role != null || infoCardDetails.dates != null"
-      class="subtitle role-date mb-0"
+      class="columns mb-0"
     >
-      <span *ngIf="infoCardDetails.role != null">
+      <p
+        class="column is-narrow subtitle role-date mb-0 pb-0 pt-0 pr-0"
+        *ngIf="infoCardDetails.role != null"
+      >
         {{ infoCardDetails.role }}
-      </span>
-      <!-- Without this, if there were no role and only a dates property, then the right align would cause the dates
-        element to be on the same line as the content below. -->
-      <span *ngIf="infoCardDetails.role == null">&nbsp;</span>
+      </p>
 
-      <span *ngIf="infoCardDetails.dates != null" class="is-pulled-right">
+      <!-- This is there as a spacer between the role and the dates -->
+      <div class="column pb-0 pt-0 pr-0 pl-0"></div>
+
+      <p
+        *ngIf="infoCardDetails.dates != null"
+        class="column is-narrow subtitle role-date mb-0 pb-0 pt-0 pr-0"
+      >
         {{ infoCardDetails.dates }}
-      </span>
-    </p>
+      </p>
+    </div>
 
     <div class="content">
       <ul

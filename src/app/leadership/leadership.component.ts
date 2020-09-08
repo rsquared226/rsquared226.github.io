@@ -19,7 +19,7 @@ export class LeadershipComponent implements OnInit {
       imageUrl: '/assets/images/HackPSU.jpg',
       title: 'HackPSU',
       role: 'Tech Director',
-      dates: 'January 2020 - Current',
+      dates: 'Jan 2020 - Current',
       descriptionPoints: [
         'Manage a team of 15 to develop and maintain an entire technology stack to allow 1000+ hackathon participants to create profiles, register for the event, and find relevant information',
         'Delegate information using the Agile methodology in conjunction with Asana',
@@ -33,7 +33,7 @@ export class LeadershipComponent implements OnInit {
       imageUrl: '/assets/images/unicef.jpg',
       title: 'UNICEF',
       role: 'Treasurer',
-      dates: 'January 2020 - Current',
+      dates: 'Jan 2020 - Current',
       descriptionPoints: [
         'Responsible for the club budget and sent proceeds from fundraisers to UNICEF',
         'Communicated with 4 businesses for fundraisers (raised $900+) and for organizing volunteering events',
@@ -47,7 +47,7 @@ export class LeadershipComponent implements OnInit {
       imageUrl: '/assets/images/ftcleader.png',
       title: 'FIRST Tech Challenge',
       role: 'Software Lead',
-      dates: 'June 2017 - May 2019',
+      dates: 'Jun 2017 - May 2019',
       descriptionPoints: [
         'Led team of 6 developers to program the robot to compete in competitions',
         'Taught new members the basics of Java and Android Studio',
@@ -63,7 +63,7 @@ export class LeadershipComponent implements OnInit {
       imageUrl: '/assets/images/tsa.png',
       title: 'Technology Student Association',
       role: 'President',
-      dates: 'August 2017 - May 2019',
+      dates: 'Aug 2017 - May 2019',
       descriptionPoints: [
         'Led the school chapter to ensure all 96 members knew how to register and compete effectively in their events',
         'Raised over $500 for the club by marketing Little Debbie’s treats to the school',
