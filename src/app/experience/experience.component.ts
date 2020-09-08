@@ -66,13 +66,29 @@ export class ExperienceComponent implements OnInit {
       descriptionPoints: [
         'Worked with a team of 15 people to build and program a robot to compete in competitions',
         'Designed and implemented software for the robot using Java in Android Studio and utilized TensorFlow to autonomously identify balls and blocks on the playing field',
-        'Assigned tasks to members using Basecamp and used GitHub to manage the code',
+        'Overall winners (5 times), best robot performance (6), smartest programming award (4), and other awards',
       ],
-      skills: 'Robotics, Java, Android Studio, GitHub',
+      skills: 'Robotics, Java, Android Studio, C/C++, GitHub',
       generalLink: 'http://www.pacar-robotics.org/',
       generalLinkName: 'Website',
       generalFaIcon: 'fas fa-desktop',
       githubLink: 'https://github.com/pacar-robotics',
+    },
+    {
+      imageUrl: '/assets/images/tsaexperience.jpg',
+      title: 'Technology Student Association',
+      dates: 'Sept 2016 - May 2019',
+      descriptionPoints: [
+        'States Coding, 5th place',
+        'States Tech Bowl, 5th place',
+        'States Video Game Design, 10th place',
+        'States Computer Systems Troubleshooting, 10th place',
+        'Other awards dedicated to video production',
+      ],
+      skills: 'Java, C#, General computer knowledge',
+      generalLink: 'https://www.instagram.com/cvhstsa/',
+      generalLinkName: 'Social',
+      generalFaIcon: 'fab fa-instagram',
     },
   ];
 

@@ -68,6 +68,9 @@ export class LeadershipComponent implements OnInit {
         'Led the school chapter to ensure all 96 members knew how to register and compete effectively in their events',
         'Raised over $500 for the club by marketing Little Debbie’s treats to the school',
       ],
+      generalLink: 'https://www.instagram.com/cvhstsa/',
+      generalLinkName: 'Social',
+      generalFaIcon: 'fab fa-instagram',
     },
   ];
 
