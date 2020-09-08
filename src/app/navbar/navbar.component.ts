@@ -16,4 +16,8 @@ export class NavbarComponent implements OnInit {
   onBurgerClick(): void {
     this.isNavbarBurgerOpen = !this.isNavbarBurgerOpen;
   }
+
+  closeNavbar(): void {
+    this.isNavbarBurgerOpen = false;
+  }
 }
