@@ -48,7 +48,7 @@ export class ExperienceComponent implements OnInit {
       title: 'Personal Portfolio',
       dates: 'July 2020 - Current',
       descriptionPoints: [
-        'This website!',
+        'This website! One of my summer personal projects',
         'Designed and coded this portfolio using Angular and Bulma',
         "Utilize Angular's object-oriented values to prevent repeated code in HTML by using components for elements such as info cards",
       ],
