@@ -35,7 +35,7 @@ export class ExperienceComponent implements OnInit {
     {
       imageUrl: '/assets/images/HackPSU.jpg',
       title: 'HackPSU Mobile App',
-      dates: 'October 2019 - Current',
+      dates: 'Oct 2019 - Current',
       descriptionPoints: [
         'Designing and building HackPSU’s first mobile app using React Native',
         'Allow 1000+ users to query backend database to get user data',
