@@ -15,7 +15,10 @@
           </h1>
         </div>
 
-        <div class="column">
+        <div
+          *ngIf="infoCardsDetails != null && infoCardsDetails.length > 0"
+          class="column"
+        >
           <div class="columns is-desktop">
             <div class="column">
               <div *ngFor="let cardDetails of firstColData()">
@@ -28,6 +31,22 @@
                 <app-info-card [infoCardDetails]="cardDetails"></app-info-card>
                 <br />
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          *ngIf="skillCardsDetails != null && skillCardsDetails.length > 0"
+          class="column"
+        >
+          <div class="columns is-multiline is-mobile">
+            <div
+              *ngFor="let cardDetails of skillCardsDetails"
+              class="column is-one-quarter-fullhd is-one-third-widescreen is-one-third-desktop is-one-third-tablet is-half-mobile"
+            >
+              <app-skills-card
+                [skillCardDetails]="cardDetails"
+              ></app-skills-card>
             </div>
           </div>
         </div>
