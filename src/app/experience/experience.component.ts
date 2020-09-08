@@ -44,7 +44,7 @@ export class ExperienceComponent implements OnInit {
       skills: 'React Native, Typescript, Figma, Mobile app dev',
     },
     {
-      imageUrl: '/assets/images/websitepreview.png',
+      imageUrl: '/assets/images/websitepreview.jpg',
       title: 'Personal Portfolio',
       dates: 'July 2020 - Current',
       descriptionPoints: [
