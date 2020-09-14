@@ -23,6 +23,7 @@ export class EducationComponent implements OnInit {
       descriptionPoints: [
         'Computer Science Major',
         'Smeal College Business Certificate',
+        "Dean's List (2 semesters)",
       ],
     },
   ];

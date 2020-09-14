@@ -20,10 +20,11 @@ export class ExperienceComponent implements OnInit {
       title: 'Budget My Life',
       dates: 'May 2020 - Current',
       descriptionPoints: [
-        'Designed, coded, and deployed a beautiful and intuitive budgeting application using Flutter',
-        'Summer personal project with 250+ hours invested',
-        'Enable the user to track transactions and view insights on how they spend/earn their money',
-        '200+ installs',
+        'Design, code, and deploy a beautiful and intuitive budgeting application using Flutter and material design',
+        'Invested 250+ hours into this open-source summer personal project with 200+ installs on the Play Store',
+        'Track transactions and generate insights on how users handle their money through charts_flutter library',
+        'Created a CI/CD workflow to automatically build and deploy the app to the Play Store when a tag was created on the production branch',
+        'Utilize SQLite to store and query the user’s transactions',
       ],
       generalLink:
         'https://play.google.com/store/apps/details?id=rsquared226.budget_my_life',
@@ -37,7 +38,7 @@ export class ExperienceComponent implements OnInit {
       title: 'HackPSU Mobile App',
       dates: 'Oct 2019 - Current',
       descriptionPoints: [
-        'Designing and building HackPSU’s first mobile app using React Native',
+        'Design and build HackPSU’s first mobile app using React Native',
         'Allow 1000+ users to query backend database to get user data',
       ],
       githubLink: 'https://github.com/Hack-PSU/frontend-app/',
@@ -49,8 +50,8 @@ export class ExperienceComponent implements OnInit {
       dates: 'July 2020 - Current',
       descriptionPoints: [
         'This website! One of my summer personal projects',
-        'Designed and coded this portfolio using Angular and Bulma (Bootstrap alternative)',
-        "Utilize Angular's object-oriented values to prevent repeated code in HTML by using components for elements such as info cards",
+        'Design and code this portfolio using Angular (HTML/CSS, Typescript), Bulma (Bootstrap alternative) ',
+        "Utilized Angular's object-oriented values to prevent repeated code by using components for elements and to make the design easily changeable",
       ],
       skills:
         'Angular, Typescript, HTML, CSS, Bulma, Figma, GitHub Pages, Google Domains',
@@ -68,7 +69,7 @@ export class ExperienceComponent implements OnInit {
         'Designed and implemented software for the robot using Java in Android Studio and utilized TensorFlow to autonomously identify balls and blocks on the playing field',
         'Overall winners (5 times), best robot performance (6), smartest programming award (4), and other awards',
       ],
-      skills: 'Robotics, Java, Android Studio, C/C++, GitHub',
+      skills: 'Robotics, Java, Android Studio, C/C++, GitHub, Tensorflow',
       generalLink: 'http://www.pacar-robotics.org/',
       generalLinkName: 'Website',
       generalFaIcon: 'fas fa-desktop',
