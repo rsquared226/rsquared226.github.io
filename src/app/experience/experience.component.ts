@@ -21,7 +21,7 @@ export class ExperienceComponent implements OnInit {
       dates: 'May 2020 - Current',
       descriptionPoints: [
         'Design, code, and deploy a beautiful and intuitive budgeting application using Flutter and material design',
-        'Invested 250+ hours into this open-source summer personal project with 200+ installs on the Play Store',
+        'Invested 300+ hours into this open-source summer personal project with 200+ installs on the Play Store',
         'Track transactions and generate insights on how users handle their money through charts_flutter library',
         'Created a CI/CD workflow to automatically build and deploy the app to the Play Store when a tag was created on the production branch',
         'Utilize SQLite to store and query the user’s transactions',
@@ -35,13 +35,17 @@ export class ExperienceComponent implements OnInit {
     },
     {
       imageUrl: '/assets/images/HackPSU.jpg',
-      title: 'HackPSU Mobile App',
+      title: 'HackPSU Frontend & App',
       dates: 'Oct 2019 - Current',
       descriptionPoints: [
         'Design and build HackPSU’s first mobile app using React Native',
+        'Maintain and add useful features to the website and its webapp component using HTML/CSS, Javascript, and Angular',
         'Allow 1000+ users to query backend database to get user data',
       ],
-      githubLink: 'https://github.com/Hack-PSU/frontend-app/',
+      generalLink: 'https://hackpsu.org/',
+      generalLinkName: 'Website',
+      generalFaIcon: 'fas fa-desktop',
+      githubLink: 'https://github.com/Hack-PSU/',
       skills: 'React Native, Typescript, Figma, Mobile app dev',
     },
     {
