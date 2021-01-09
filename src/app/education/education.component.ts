@@ -18,12 +18,12 @@ export class EducationComponent implements OnInit {
     {
       imageUrl: '/assets/images/psu.png',
       title: 'Penn State University',
-      role: 'GPA: 4.0',
+      role: 'GPA: 3.96',
       dates: 'Graduation: May 2023',
       descriptionPoints: [
         'Computer Science Major',
         'Smeal College Business Certificate',
-        "Dean's List (2 semesters)",
+        "Dean's List (3/3 semesters)",
       ],
     },
   ];
