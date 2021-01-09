@@ -22,7 +22,7 @@ export class LeadershipComponent implements OnInit {
       dates: 'May 2020 - Current',
       descriptionPoints: [
         'Manage a team of 18 to develop and maintain an entire technology stack (Linux, Node.js, MySQL, JavaScript) to allow 1000+ hackathon participants to create profiles, register for the event, and find relevant information',
-        'Delegate information using the Agile methodology in conjunction with Asana',
+        'Delegate information using the Agile methodology in conjunction with Todoist (Kanban boards)',
       ],
       generalLink: 'https://hackpsu.org/',
       generalLinkName: 'Website',
@@ -33,7 +33,7 @@ export class LeadershipComponent implements OnInit {
       imageUrl: '/assets/images/unicef.jpg',
       title: 'UNICEF PSU',
       role: 'Treasurer',
-      dates: 'Jan 2020 - Current',
+      dates: 'Jan 2020 - Dec 2020',
       descriptionPoints: [
         'Manage the club budget (~$900) and send proceeds from fundraisers to UNICEF',
         'Communicate with local businesses for fundraisers and for organizing volunteering events',
