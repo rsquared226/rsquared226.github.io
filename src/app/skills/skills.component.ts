@@ -64,7 +64,7 @@ export class SkillsComponent implements OnInit {
     },
     {
       title: 'Angular',
-      skillLevel: SkillLevel.Learning,
+      skillLevel: SkillLevel.Familiar,
     },
   ];
 

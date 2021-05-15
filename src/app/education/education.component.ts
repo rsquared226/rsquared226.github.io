@@ -18,7 +18,7 @@ export class EducationComponent implements OnInit {
     {
       imageUrl: '/assets/images/psu.png',
       title: 'Penn State University',
-      role: 'GPA: 3.96',
+      role: 'GPA: 3.97',
       dates: 'Graduation: May 2023',
       descriptionPoints: [
         'Computer Science Major',
