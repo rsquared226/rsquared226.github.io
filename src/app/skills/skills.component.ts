@@ -35,6 +35,10 @@ export class SkillsComponent implements OnInit {
       skillLevel: SkillLevel.Proficient,
     },
     {
+      title: 'HTML/CSS',
+      skillLevel: SkillLevel.Proficient,
+    },
+    {
       title: 'React Native',
       skillLevel: SkillLevel.Familiar,
     },
@@ -55,16 +59,12 @@ export class SkillsComponent implements OnInit {
       skillLevel: SkillLevel.Familiar,
     },
     {
-      title: 'HTML/CSS',
-      skillLevel: SkillLevel.Familiar,
-    },
-    {
       title: 'SQLite',
       skillLevel: SkillLevel.Familiar,
     },
     {
       title: 'Angular',
-      skillLevel: SkillLevel.Learning,
+      skillLevel: SkillLevel.Familiar,
     },
   ];
 
