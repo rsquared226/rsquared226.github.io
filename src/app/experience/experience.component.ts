@@ -16,12 +16,27 @@ import { InfoCardDetails } from '../info-card/info-card.component';
 export class ExperienceComponent implements OnInit {
   readonly infoCardDetails: InfoCardDetails[] = [
     {
+      imageUrl: '/assets/images/jpmorganchase.jpg',
+      title: 'JPMorgan Chase & Co.',
+      dates: 'June 2021 - Current',
+      descriptionPoints: [
+        'Rewrite the legacy fraud tracking application for support specialists with a more modern, intuitive design',
+        'Collaborate remotely with a team of 7 developers across time zones using the agile framework with Jira',
+        'Utilize React, Spring Boot, Cassandra, Jest, Jenkins, and Maven to code, test, and deploy our application',
+        'Create descriptive documentation about custom components and code decisions using Confluence',
+      ],
+      generalLink:
+        'https://www.jpmorganchase.com/',
+      generalLinkName: 'Website',
+      generalFaIcon: 'fas fa-desktop',
+    },
+    {
       imageUrl: '/assets/images/budgetmylife.jpg',
       title: 'Budget My Life',
       dates: 'May 2020 - Current',
       descriptionPoints: [
         'Design, code, and deploy a beautiful and intuitive budgeting application using Flutter and material design',
-        'Invested 400+ hours into this open-source personal project with 500+ installs and 4.2 stars on the Play Store',
+        'Invested 300+ hours into this open-source personal project with 1000+ installs and 4.3 stars on the Play Store',
         'Track transactions and generate insights on how users handle their money through charts_flutter library',
         'Created a CI/CD workflow to automatically build and deploy the app to the Play Store when a tag was created on the production branch',
         'Utilize SQLite to store and query the user’s transactions',

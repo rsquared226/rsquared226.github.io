@@ -21,7 +21,7 @@ export class LeadershipComponent implements OnInit {
       role: 'Tech Director',
       dates: 'May 2020 - Current',
       descriptionPoints: [
-        'Manage a team of 18 to develop and maintain an entire technology stack (Linux, Node.js, MySQL, JavaScript) to allow 1000+ hackathon participants to create profiles, register for the event, and find relevant information',
+        'Manage a team of 9 to develop and maintain an entire technology stack (Linux, Node.js, MySQL, JavaScript) to allow 1000+ hackathon participants to create profiles, register for the event, and find relevant information',
         'Delegate information using the Agile methodology in conjunction with Todoist (Kanban boards)',
       ],
       generalLink: 'https://hackpsu.org/',

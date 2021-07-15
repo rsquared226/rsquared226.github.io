@@ -23,15 +23,7 @@ export class SkillsComponent implements OnInit {
       skillLevel: SkillLevel.Proficient,
     },
     {
-      title: 'Flutter',
-      skillLevel: SkillLevel.Proficient,
-    },
-    {
-      title: 'Git/GitHub',
-      skillLevel: SkillLevel.Proficient,
-    },
-    {
-      title: 'Robotics',
+      title: 'Javascript',
       skillLevel: SkillLevel.Proficient,
     },
     {
@@ -39,23 +31,31 @@ export class SkillsComponent implements OnInit {
       skillLevel: SkillLevel.Proficient,
     },
     {
-      title: 'React Native',
-      skillLevel: SkillLevel.Familiar,
+      title: 'Flutter',
+      skillLevel: SkillLevel.Proficient,
     },
     {
-      title: 'Javascript',
-      skillLevel: SkillLevel.Familiar,
+      title: 'Robotics',
+      skillLevel: SkillLevel.Proficient,
+    },
+    {
+      title: 'Git/GitHub',
+      skillLevel: SkillLevel.Proficient,
+    },
+    {
+      title: 'React (Native)',
+      skillLevel: SkillLevel.Proficient,
     },
     {
       title: 'Python',
       skillLevel: SkillLevel.Familiar,
     },
     {
-      title: 'Android Studio',
+      title: 'C/C++',
       skillLevel: SkillLevel.Familiar,
     },
     {
-      title: 'C/C++',
+      title: 'Jest Testing',
       skillLevel: SkillLevel.Familiar,
     },
     {
