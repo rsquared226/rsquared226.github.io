@@ -21,7 +21,7 @@ export class ExperienceComponent implements OnInit {
       dates: 'May 2020 - Current',
       descriptionPoints: [
         'Design, code, and deploy a beautiful and intuitive budgeting application using Flutter and material design',
-        'Invested 400+ hours into this open-source personal project with 500+ installs and 4.2 stars on the Play Store',
+        'Invested 300+ hours into this open-source personal project with 1000+ installs and 4.3 stars on the Play Store',
         'Track transactions and generate insights on how users handle their money through charts_flutter library',
         'Created a CI/CD workflow to automatically build and deploy the app to the Play Store when a tag was created on the production branch',
         'Utilize SQLite to store and query the user’s transactions',
