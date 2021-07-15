@@ -16,6 +16,21 @@ import { InfoCardDetails } from '../info-card/info-card.component';
 export class ExperienceComponent implements OnInit {
   readonly infoCardDetails: InfoCardDetails[] = [
     {
+      imageUrl: '/assets/images/jpmorganchase.jpg',
+      title: 'JPMorgan Chase & Co.',
+      dates: 'June 2021 - Current',
+      descriptionPoints: [
+        'Rewrite the legacy fraud tracking application for support specialists with a more modern, intuitive design',
+        'Collaborate remotely with a team of 7 developers across time zones using the agile framework with Jira',
+        'Utilize React, Spring Boot, Cassandra, Jest, Jenkins, and Maven to code, test, and deploy our application',
+        'Create descriptive documentation about custom components and code decisions using Confluence',
+      ],
+      generalLink:
+        'https://www.jpmorganchase.com/',
+      generalLinkName: 'Website',
+      generalFaIcon: 'fas fa-desktop',
+    },
+    {
       imageUrl: '/assets/images/budgetmylife.jpg',
       title: 'Budget My Life',
       dates: 'May 2020 - Current',
